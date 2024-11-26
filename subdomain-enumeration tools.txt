@@ -27,3 +27,7 @@ from it
 
 9-httpx =>to see what subdomains are
 valid or not
+
+-------------------------------------------
+via certificate
+10-crt.sh
