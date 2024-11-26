@@ -1,0 +1,19 @@
+1- login over http not https 	( insecure data transfer )
+
+2- no rate limit over password => https://hackerone.com/reports/410451
+
+3- try default credentials (test:test) (admin:admin) (admin:password) (kali:kali) (admin:123) 
+(admin:default) (root:root) (root:toor) (admin:kali) (kali:root) (admin:123456789) 
+
+4- try to inject sql injection in username as admin' or 1=1; -- -
+
+5- try to make response manipulation  to bypass login page
+
+6- use the request and send it to sqlmap to test if there is sql injection or not
+
+7- try to inject xss payloads in username as <svg/onload=confirm()>
+
+8- try to inject template injection inside username as {{9*9}} and if printed 81 then vulnerable to template injection 
+
+9- view source code of the page from CTRL+U to see if leaked credentials 
+ 
