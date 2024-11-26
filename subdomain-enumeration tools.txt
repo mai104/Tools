@@ -1,0 +1,29 @@
+subdomain-enumeration tools
+----------------------------
+1-Securitytrails.com (signup with fake email from "mail.tm")
+2-Subdomainfinder.c99.nl
+3-https://shrewdeye.app/search
+
+4-Subfinder tool in linux terminal
+(
+# apt install subfinder => # subfinder –d mars.com -all --recursive
+)
+
+5-assetfinder
+(
+# apt install assetfinder
+# echo "mars.com" | assetfinder --subs-only
+)
+
+6- anew =>removes duplicates(# go install -v github.com/tomnomnom/anew@latest)
+7-ffuf (# apt install ffuf) =>First we need list of subdomains to fuzz and guess(seclist || assette wordlist)
+from it
+8-amass => get the subdomains of CIDR (apt install amass)
+(
+# amass intel -active -cidr 159.69.129.82/32 ==>CIDR
+# amass intel -org "Tesla"==> NAME
+
+)
+
+9-httpx =>to see what subdomains are
+valid or not
